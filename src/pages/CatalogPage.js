@@ -1,9 +1,10 @@
 import { ProductCard } from "../components/ProductCard.js";
 import { getStoredSort, ProductSort, sortableGridAttrs } from "../components/ProductSort.js";
 import { filterProducts, getProducts, sortProducts } from "../lib/catalog.js";
+import { getAppParams } from "../lib/navigation.js";
 
 export function CatalogPage() {
-  const params = new URLSearchParams(location.search);
+  const params = getAppParams();
   const filters = {
     query: "",
     category: params.get("category") || "all",

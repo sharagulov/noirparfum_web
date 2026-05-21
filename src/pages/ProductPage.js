@@ -3,6 +3,7 @@ import { ProductMedia } from "../components/ProductMedia.js";
 import { SectionTitle } from "../components/SectionTitle.js";
 import { getCollection, getProduct, getPurchasableVariant, getVariant, isPurchasable, relatedProducts, statusLabels } from "../lib/catalog.js";
 import { escapeHtml, localizeConcentration, rub } from "../lib/format.js";
+import { getAppParams, getAppPath, navigateApp } from "../lib/navigation.js";
 import { addToCart, isCompared, toggleCompare } from "../state/store.js";
 import { render } from "../router.js";
 import { showToast } from "../components/bindCommon.js";
@@ -10,7 +11,7 @@ import { showToast } from "../components/bindCommon.js";
 export function ProductPage(slug) {
   const product = getProduct(slug);
   if (!product) return NotFoundProduct();
-  const params = new URLSearchParams(location.search);
+  const params = getAppParams();
   const selected = getVariant(product, params.get("variant"));
   const purchasable = getPurchasableVariant(product, selected?.id);
   const collection = getCollection(product.collection);
@@ -111,9 +112,9 @@ export function ProductPage(slug) {
 export function bindProductPage() {
   document.querySelectorAll("[data-select-variant]").forEach((button) => {
     button.addEventListener("click", () => {
-      const params = new URLSearchParams(location.search);
+      const params = getAppParams();
       params.set("variant", button.dataset.selectVariant);
-      history.replaceState({}, "", `${location.pathname}?${params.toString()}`);
+      navigateApp(`${getAppPath()}?${params.toString()}`, { replace: true });
       render({ preserveScroll: true });
     });
   });

@@ -1,4 +1,5 @@
 import { addToCart, toggleCompare } from "../state/store.js";
+import { navigateApp } from "../lib/navigation.js";
 import { render } from "../router.js";
 
 export function bindCommon() {
@@ -29,7 +30,7 @@ export function bindInteractive(scope = document) {
       document.querySelector(".mobile-menu")?.classList.remove("is-open");
       document.querySelector(".burger")?.setAttribute("aria-expanded", "false");
       document.querySelector(".mobile-menu")?.setAttribute("aria-hidden", "true");
-      history.pushState({}, "", href);
+      navigateApp(href);
       render();
     });
   });

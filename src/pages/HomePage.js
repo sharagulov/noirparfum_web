@@ -15,7 +15,7 @@ export function HomePage() {
   return `
     <section class="home-portal">
       <div class="home-portal__bg">
-        <img src="/images/products/hero-main.jpg" alt="" fetchpriority="high" decoding="async" />
+        <img src="/images/products/hero-main.webp" alt="" loading="eager" fetchpriority="high" decoding="async" />
       </div>
       <div class="home-portal__shade" aria-hidden="true"></div>
       <aside class="home-portal__promo" data-reveal aria-label="SYLHOUR NOIR — лимитированный тираж">

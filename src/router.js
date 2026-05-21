@@ -10,11 +10,12 @@ import { SectionCatalogPage, SectionLandingPage } from "./pages/FragrancePage.js
 import { HomePage } from "./pages/HomePage.js";
 import { bindProductPage, ProductPage } from "./pages/ProductPage.js";
 import { bindServicePage, ServicePage } from "./pages/ServicePage.js";
+import { getAppFragment, getAppPath, isFileRuntime } from "./lib/navigation.js";
 
 const app = document.getElementById("app");
 
 export function render(options = {}) {
-  const path = location.pathname.replace(/\/$/, "") || "/";
+  const path = getAppPath().replace(/\/$/, "") || "/";
   const route = resolveRoute(path);
   if (!app) return;
   app.innerHTML = PageShell(route.html, path);
@@ -22,8 +23,9 @@ export function render(options = {}) {
   bindProductSort();
   route.bind?.();
   reveal();
-  if (location.hash) {
-    document.querySelector(location.hash)?.scrollIntoView({ block: "start" });
+  const fragment = getAppFragment();
+  if (fragment) {
+    document.querySelector(fragment)?.scrollIntoView({ block: "start" });
   } else if (!options.preserveScroll) {
     window.scrollTo(0, 0);
   }
@@ -76,3 +78,6 @@ function reveal() {
 }
 
 window.addEventListener("popstate", () => render());
+if (isFileRuntime()) {
+  window.addEventListener("hashchange", () => render());
+}

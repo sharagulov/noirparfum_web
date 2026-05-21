@@ -18,7 +18,7 @@ const sectionsConfig = {
         range: "20-40%",
         subtitle: "Самая высокая стойкость и плотность композиции",
         description: "Концентрированные формулы для вечернего и акцентного звучания",
-        image: "/images/sections/duhi/duhi.png",
+        image: "/images/sections/duhi/duhi.webp",
         filter: (product) => product.category === "fragrance" && product.concentration.toLowerCase().includes("extrait"),
       },
       {
@@ -27,7 +27,7 @@ const sectionsConfig = {
         range: "15-20%",
         subtitle: "Основной формат коллекции",
         description: "Баланс стойкости и комфорта для ежедневной носки",
-        image: "/images/sections/duhi/parfyumernaya-voda.png",
+        image: "/images/sections/duhi/parfyumernaya-voda.webp",
         filter: (product) =>
           product.category === "fragrance" && product.concentration.toLowerCase().includes("eau de parfum"),
       },
@@ -37,7 +37,7 @@ const sectionsConfig = {
         range: "5-15%",
         subtitle: "Лёгкое дневное звучание",
         description: "Более прозрачный профиль для мягкой повседневной носки",
-        image: "/images/sections/duhi/tualetnaya-voda.png",
+        image: "/images/sections/duhi/tualetnaya-voda.webp",
         filter: (product) =>
           product.category === "fragrance" && product.concentration.toLowerCase().includes("eau de toilette"),
       },
@@ -47,7 +47,7 @@ const sectionsConfig = {
         range: "2-4%",
         subtitle: "Свежий формат с минимальной плотностью",
         description: "Цитрусовые и чистые композиции на тёплый сезон",
-        image: "/images/sections/duhi/odekolon.png",
+        image: "/images/sections/duhi/odekolon.webp",
         filter: (product) => product.category === "fragrance" && product.concentration.toLowerCase().includes("cologne"),
       },
     ],

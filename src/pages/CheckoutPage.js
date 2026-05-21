@@ -1,10 +1,11 @@
 import service from "../data/service.json";
 import { escapeHtml, rub } from "../lib/format.js";
+import { getAppParams, navigateApp } from "../lib/navigation.js";
 import { cartLines, cartTotals, clearCart } from "../state/store.js";
 import { render } from "../router.js";
 
 export function CheckoutPage() {
-  const params = new URLSearchParams(location.search);
+  const params = getAppParams();
   if (params.get("status") === "success") return SuccessState();
 
   const lines = cartLines();
@@ -128,24 +129,24 @@ export function CheckoutPage() {
 export function bindCheckoutPage() {
   document.querySelectorAll('input[name="delivery"]').forEach((radio) => {
     radio.addEventListener("change", () => {
-      const params = new URLSearchParams(location.search);
+      const params = getAppParams();
       params.set("delivery", radio.value);
-      history.replaceState({}, "", `/checkout?${params.toString()}`);
+      navigateApp(`/checkout?${params.toString()}`, { replace: true });
       render({ preserveScroll: true });
     });
   });
   document.querySelectorAll('input[name="payment"]').forEach((radio) => {
     radio.addEventListener("change", () => {
-      const params = new URLSearchParams(location.search);
+      const params = getAppParams();
       params.set("payment", radio.value);
-      history.replaceState({}, "", `/checkout?${params.toString()}`);
+      navigateApp(`/checkout?${params.toString()}`, { replace: true });
       render({ preserveScroll: true });
     });
   });
   document.querySelector("[data-checkout-form]")?.addEventListener("submit", (event) => {
     event.preventDefault();
     clearCart();
-    history.pushState({}, "", "/checkout?status=success");
+    navigateApp("/checkout?status=success");
     render();
   });
 }

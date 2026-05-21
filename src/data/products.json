@@ -62,7 +62,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/minuit.png",
+      "src": "/images/products/flacons/minuit.webp",
       "ready": true,
       "tone": "gold"
     },
@@ -135,7 +135,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/cendres.png",
+      "src": "/images/products/flacons/cendres.webp",
       "ready": true,
       "tone": "smoke"
     },
@@ -208,7 +208,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/aurore.png",
+      "src": "/images/products/flacons/aurore.webp",
       "ready": true,
       "tone": "light"
     },
@@ -281,7 +281,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/terre.png",
+      "src": "/images/products/flacons/terre.webp",
       "ready": true,
       "tone": "earth"
     },
@@ -348,7 +348,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/velours.png",
+      "src": "/images/products/flacons/velours.webp",
       "ready": true,
       "tone": "velvet"
     },
@@ -415,7 +415,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/lumen.png",
+      "src": "/images/products/flacons/lumen.webp",
       "ready": true,
       "tone": "lumen"
     },
@@ -482,7 +482,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/obsidienne.png",
+      "src": "/images/products/flacons/obsidienne.webp",
       "ready": true,
       "tone": "obsidian"
     },
@@ -548,7 +548,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/sylhour-noir.png",
+      "src": "/images/products/flacons/sylhour-noir.webp",
       "ready": true,
       "tone": "noir"
     },
@@ -612,7 +612,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/la-nuit-discovery.png",
+      "src": "/images/products/flacons/la-nuit-discovery.webp",
       "ready": true,
       "tone": "set"
     },
@@ -677,7 +677,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/chambre-noire.png",
+      "src": "/images/products/flacons/chambre-noire.webp",
       "ready": true,
       "tone": "home"
     },
@@ -738,7 +738,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/atelier-noir.png",
+      "src": "/images/products/flacons/atelier-noir.webp",
       "ready": true,
       "tone": "atelier"
     },
@@ -805,7 +805,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/encens.png",
+      "src": "/images/products/flacons/encens.webp",
       "ready": true,
       "tone": "incense"
     },
@@ -872,7 +872,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/nebuleuse.png",
+      "src": "/images/products/flacons/nebuleuse.webp",
       "ready": true,
       "tone": "mist"
     },
@@ -939,7 +939,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/fer-noir.png",
+      "src": "/images/products/flacons/fer-noir.webp",
       "ready": true,
       "tone": "iron"
     },
@@ -1006,7 +1006,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/opale.png",
+      "src": "/images/products/flacons/opale.webp",
       "ready": true,
       "tone": "opal"
     },
@@ -1070,7 +1070,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/brume-interieure.png",
+      "src": "/images/products/flacons/brume-interieure.webp",
       "ready": true,
       "tone": "home-mist"
     },
@@ -1131,7 +1131,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/carte-noire.png",
+      "src": "/images/products/flacons/carte-noire.webp",
       "ready": true,
       "tone": "set-dark"
     },
@@ -1198,7 +1198,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/absinthe.png",
+      "src": "/images/products/flacons/absinthe.webp",
       "ready": true,
       "tone": "green"
     },
@@ -1265,7 +1265,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/veille.png",
+      "src": "/images/products/flacons/veille.webp",
       "ready": true,
       "tone": "watch"
     },
@@ -1332,7 +1332,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/miroir.png",
+      "src": "/images/products/flacons/miroir.webp",
       "ready": true,
       "tone": "mirror"
     },
@@ -1399,7 +1399,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/noctivore.jpg",
+      "src": "/images/products/flacons/new/noctivore.webp",
       "ready": true,
       "tone": "noir"
     },
@@ -1466,7 +1466,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/cendre-or.jpg",
+      "src": "/images/products/flacons/new/cendre-or.webp",
       "ready": true,
       "tone": "gold"
     },
@@ -1533,7 +1533,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/brume-sel.jpg",
+      "src": "/images/products/flacons/new/brume-sel.webp",
       "ready": true,
       "tone": "mist"
     },
@@ -1600,7 +1600,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/cuir-fauve.jpg",
+      "src": "/images/products/flacons/new/cuir-fauve.webp",
       "ready": true,
       "tone": "leather"
     },
@@ -1667,7 +1667,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/santal-blanc.jpg",
+      "src": "/images/products/flacons/new/santal-blanc.webp",
       "ready": true,
       "tone": "wood"
     },
@@ -1734,7 +1734,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/resine-noire.jpg",
+      "src": "/images/products/flacons/new/resine-noire.webp",
       "ready": true,
       "tone": "resin"
     },
@@ -1801,7 +1801,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/fleur-cendre.jpg",
+      "src": "/images/products/flacons/new/fleur-cendre.webp",
       "ready": true,
       "tone": "ash"
     },
@@ -1868,7 +1868,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/ambre-froid.jpg",
+      "src": "/images/products/flacons/new/ambre-froid.webp",
       "ready": true,
       "tone": "amber"
     },
@@ -1935,7 +1935,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/epices-rouges.jpg",
+      "src": "/images/products/flacons/new/epices-rouges.webp",
       "ready": true,
       "tone": "spice"
     },
@@ -2002,7 +2002,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/orage-gris.jpg",
+      "src": "/images/products/flacons/new/orage-gris.webp",
       "ready": true,
       "tone": "storm"
     },
@@ -2069,7 +2069,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/pluie-metal.jpg",
+      "src": "/images/products/flacons/new/pluie-metal.webp",
       "ready": true,
       "tone": "rain"
     },
@@ -2136,7 +2136,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/bois-encre.jpg",
+      "src": "/images/products/flacons/new/bois-encre.webp",
       "ready": true,
       "tone": "ink"
     },
@@ -2203,7 +2203,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/iris-deuil.jpg",
+      "src": "/images/products/flacons/new/iris-deuil.webp",
       "ready": true,
       "tone": "iris"
     },
@@ -2270,7 +2270,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/tabac-velours.jpg",
+      "src": "/images/products/flacons/new/tabac-velours.webp",
       "ready": true,
       "tone": "tobacco"
     },
@@ -2335,7 +2335,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/salon-obscur.jpg",
+      "src": "/images/products/flacons/new/salon-obscur.webp",
       "ready": true,
       "tone": "home"
     },
@@ -2400,7 +2400,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/cire-minuit.jpg",
+      "src": "/images/products/flacons/new/cire-minuit.webp",
       "ready": true,
       "tone": "candle"
     },
@@ -2464,7 +2464,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/brume-chambre.jpg",
+      "src": "/images/products/flacons/new/brume-chambre.webp",
       "ready": true,
       "tone": "home-mist"
     },
@@ -2529,7 +2529,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/encens-maison.jpg",
+      "src": "/images/products/flacons/new/encens-maison.webp",
       "ready": true,
       "tone": "diffuser"
     },
@@ -2592,7 +2592,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/decouverte-crepuscule.jpg",
+      "src": "/images/products/flacons/new/decouverte-crepuscule.webp",
       "ready": true,
       "tone": "set"
     },
@@ -2654,7 +2654,7 @@
       }
     ],
     "image": {
-      "src": "/images/products/flacons/new/passeport-noir.jpg",
+      "src": "/images/products/flacons/new/passeport-noir.webp",
       "ready": true,
       "tone": "set-travel"
     },
