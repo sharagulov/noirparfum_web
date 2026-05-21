@@ -44,30 +44,50 @@
 
   .mobile-menu {
     position: fixed;
-    inset: var(--header-h) 0 0;
+    top: var(--header-h);
+    left: 0;
+    right: 0;
+    bottom: 0;
     z-index: 49;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding: 40px 24px;
-    background: rgba(10, 10, 10, 0.97);
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+    max-width: 100vw;
+    min-height: calc(100dvh - var(--header-h));
+    margin: 0;
+    padding: 32px 24px max(32px, env(safe-area-inset-bottom));
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: var(--bg-primary);
     border-top: 1px solid var(--line);
     opacity: 0;
+    visibility: hidden;
     pointer-events: none;
-    transform: translateY(-12px);
+    transform: translate3d(0, -10px, 0);
+    transform-origin: top center;
     transition:
-      opacity 0.25s var(--ease-out),
-      transform 0.25s var(--ease-out);
+      opacity 0.28s var(--ease-out),
+      transform 0.28s var(--ease-out),
+      visibility 0.28s var(--ease-out);
   }
 
   .mobile-menu.is-open {
     opacity: 1;
+    visibility: visible;
     pointer-events: auto;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
 
   .mobile-menu a {
+    display: block;
+    width: 100%;
+    padding-block: 6px;
     font-size: 1.05rem;
+    line-height: 1.35;
   }
 
   .hero__aside {
@@ -109,6 +129,10 @@
   .summary-card,
   .product-detail__media {
     position: static;
+    width: 100%;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
   }
 
   .product-detail {
@@ -118,7 +142,28 @@
   }
 
   .product-detail__media .product-media--detail {
-    width: min(100%, clamp(280px, 78vw, 440px));
+    width: min(100%, var(--detail-media-max));
+    max-width: 100%;
+    max-height: none;
+    margin-inline: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .product-detail__media .product-media--detail::after {
+    border-radius: inherit;
+  }
+
+  .product-detail__media .product-media--detail img {
+    transform: none;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .product-detail__media .product-media--detail img.product-media__img--flacon,
+  .product-detail__media .product-media--detail img[src*="/flacons/"] {
+    clip-path: inset(5px);
   }
 
   .product-detail__info .product-buy {
@@ -138,7 +183,7 @@
 @media (max-width: 680px) {
   .home-portal {
     --portal-card-h: clamp(72px, 11vh, 96px);
-    --portal-fade-h: calc(4 * var(--portal-card-h) + 30px + 24px + var(--portal-fade-extra));
+    --portal-fade-h: calc(2 * var(--portal-card-h) + 10px + 24px + var(--portal-fade-extra));
   }
 
   .home-portal__promo {
@@ -265,6 +310,19 @@
 
   .empty-state {
     padding: 40px 20px;
+  }
+
+  .product-detail {
+    --detail-media-max: min(88vw, 360px);
+  }
+
+  .product-detail__media .product-media--detail {
+    width: min(100%, var(--detail-media-max));
+  }
+
+  .product-detail__media .product-media--detail img.product-media__img--flacon,
+  .product-detail__media .product-media--detail img[src*="/flacons/"] {
+    clip-path: inset(3px);
   }
 
   .footer-grid,

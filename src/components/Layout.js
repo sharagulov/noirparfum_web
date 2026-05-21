@@ -39,11 +39,11 @@ export function Header(currentPath = "/") {
           </button>
         </div>
       </div>
-      <div class="mobile-menu" aria-label="Мобильное меню">
-        ${nav}
-        <a href="/cart" data-link>Корзина</a>
-      </div>
     </header>
+    <nav class="mobile-menu" aria-label="Мобильное меню" aria-hidden="true">
+      ${nav}
+      <a href="/cart" data-link>Корзина</a>
+    </nav>
   `;
 }
 

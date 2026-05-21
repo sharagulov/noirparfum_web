@@ -11,7 +11,5 @@
 
 - `duhi/` — `duhi.png`, `parfyumernaya-voda.png`, `tualetnaya-voda.png`, `odekolon.png`
 - `dom/` — `svechi.png`, `diffuzory.webp`, `tekstil-i-sprei.webp`
-- `uhod-i-podarki/` — `grooming.png`, `gift-set.png`, `discovery-set.webp`
-- `kontent-i-brend/` — `novinki.png`, `moon.png`, `stars.png`
 
 После добавления файла обновите страницу в браузере.

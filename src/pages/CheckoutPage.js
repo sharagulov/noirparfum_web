@@ -24,6 +24,9 @@ export function CheckoutPage() {
 
   const deliveryId = params.get("delivery") || "courier";
   const delivery = service.checkout.deliveryMethods.find((item) => item.id === deliveryId) || service.checkout.deliveryMethods[0];
+  const paymentId = params.get("payment") || service.checkout.paymentMethods[0].id;
+  const payment =
+    service.checkout.paymentMethods.find((item) => item.id === paymentId) || service.checkout.paymentMethods[0];
   const totals = cartTotals(delivery.price);
 
   return `
@@ -72,9 +75,9 @@ export function CheckoutPage() {
             <div class="choice-grid">
               ${service.checkout.paymentMethods
                 .map(
-                  (method, index) => `
-                    <label class="choice-card ${index === 0 ? "is-selected" : ""}">
-                      <input type="radio" name="payment" value="${escapeHtml(method.id)}" ${index === 0 ? "checked" : ""} />
+                  (method) => `
+                    <label class="choice-card ${method.id === payment.id ? "is-selected" : ""}">
+                      <input type="radio" name="payment" value="${escapeHtml(method.id)}" ${method.id === payment.id ? "checked" : ""} />
                       <span>${escapeHtml(method.title)}</span>
                     </label>
                   `
@@ -127,6 +130,14 @@ export function bindCheckoutPage() {
     radio.addEventListener("change", () => {
       const params = new URLSearchParams(location.search);
       params.set("delivery", radio.value);
+      history.replaceState({}, "", `/checkout?${params.toString()}`);
+      render({ preserveScroll: true });
+    });
+  });
+  document.querySelectorAll('input[name="payment"]').forEach((radio) => {
+    radio.addEventListener("change", () => {
+      const params = new URLSearchParams(location.search);
+      params.set("payment", radio.value);
       history.replaceState({}, "", `/checkout?${params.toString()}`);
       render({ preserveScroll: true });
     });

@@ -31,7 +31,7 @@ export function render(options = {}) {
 
 function resolveRoute(path) {
   if (path === "/") return { html: HomePage() };
-  const sectionRoots = ["/duhi", "/dom", "/uhod-i-podarki", "/kontent-i-brend"];
+  const sectionRoots = ["/duhi", "/dom"];
   if (sectionRoots.includes(path)) {
     const section = path.slice(1);
     const html = SectionLandingPage(section);

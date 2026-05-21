@@ -10,14 +10,6 @@ export function HomePage() {
       title: "ДОМ",
       href: "/dom",
     },
-    {
-      title: "УХОД И ПОДАРКИ",
-      href: "/uhod-i-podarki",
-    },
-    {
-      title: "КОНТЕНТ И БРЕНД",
-      href: "/kontent-i-brend",
-    },
   ];
 
   return `

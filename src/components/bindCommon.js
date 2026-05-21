@@ -12,6 +12,7 @@ export function bindCommon() {
   burger?.addEventListener("click", () => {
     const open = mobile?.classList.toggle("is-open");
     burger.setAttribute("aria-expanded", open ? "true" : "false");
+    mobile?.setAttribute("aria-hidden", open ? "false" : "true");
     document.body.classList.toggle("nav-open", !!open);
   });
 
@@ -25,6 +26,9 @@ export function bindInteractive(scope = document) {
       if (!href || href.startsWith("http") || href.startsWith("mailto:")) return;
       event.preventDefault();
       document.body.classList.remove("nav-open");
+      document.querySelector(".mobile-menu")?.classList.remove("is-open");
+      document.querySelector(".burger")?.setAttribute("aria-expanded", "false");
+      document.querySelector(".mobile-menu")?.setAttribute("aria-hidden", "true");
       history.pushState({}, "", href);
       render();
     });

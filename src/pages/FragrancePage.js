@@ -85,72 +85,6 @@ const sectionsConfig = {
       },
     ],
   },
-  "uhod-i-podarki": {
-    title: "УХОД И ПОДАРКИ",
-    subtitle: "Подразделы ухода и подарочных форматов",
-    items: [
-      {
-        slug: "grooming",
-        title: "ГРУМИНГ",
-        range: "CARE",
-        subtitle: "Форматы для ежедневного ухода",
-        description: "Линейка ухода с фокусом на аромат и текстуру",
-        image: "/images/sections/uhod-i-podarki/grooming.png",
-        filter: (product) => product.category === "home",
-      },
-      {
-        slug: "gift-sets",
-        title: "ПОДАРОЧНЫЕ НАБОРЫ",
-        range: "GIFT",
-        subtitle: "Собранные решения для подарка",
-        description: "Готовые наборы и позиции для персонального выбора",
-        image: "/images/sections/uhod-i-podarki/gift-set.png",
-        filter: (product) => product.category === "discovery",
-      },
-      {
-        slug: "discovery",
-        title: "НАБОРЫ ЗНАКОМСТВА",
-        range: "DISCOVERY",
-        subtitle: "Первый шаг перед полноразмерным флаконом",
-        description: "Пробники для точного подбора аромата",
-        image: "/images/sections/uhod-i-podarki/discovery-set.webp",
-        filter: (product) => product.category === "discovery",
-      },
-    ],
-  },
-  "kontent-i-brend": {
-    title: "КОНТЕНТ И БРЕНД",
-    subtitle: "Подразделы с редакционным контекстом бренда",
-    items: [
-      {
-        slug: "novinki",
-        title: "НОВИНКИ",
-        range: "БРЕНД",
-        subtitle: "Актуальные релизы и фокусные позиции",
-        description: "Подборка текущих и ближайших запусков",
-        image: "/images/sections/kontent-i-brend/novinki.png",
-        filter: (product) => product.category === "fragrance",
-      },
-      {
-        slug: "arhiv-kollekcii",
-        title: "АРХИВ КОЛЛЕКЦИИ",
-        range: "БРЕНД",
-        subtitle: "История форматов и направлений",
-        description: "Витрина ключевых релизов в текущем каталоге",
-        image: "/images/sections/duhi/parfyumernaya-voda.png",
-        filter: () => true,
-      },
-      {
-        slug: "redakciya",
-        title: "РЕДАКЦИЯ",
-        range: "КОНТЕНТ",
-        subtitle: "Выбор редакции и тематические подборки",
-        description: "Подборки по настроению, сезону и сценариям",
-        image: "/images/editorial/about.png",
-        filter: (product) => product.category !== "atelier",
-      },
-    ],
-  },
 };
 
 function getSectionConfig(sectionSlug) {
@@ -228,8 +162,8 @@ function renderLandingProductsSection({ title, filter, emptyHint }) {
 function renderFragranceBand(item, sectionSlug, { compact = false } = {}) {
   const bandClass = compact ? "fragrance-band fragrance-band--compact" : "fragrance-band";
   return `
-    <a class="${bandClass}" href="/${escapeHtml(sectionSlug)}/${escapeHtml(item.slug)}" data-link style="--fragrance-image: url('${escapeHtml(item.image)}');">
-      <div class="fragrance-band__image"></div>
+    <a class="${bandClass}" href="/${escapeHtml(sectionSlug)}/${escapeHtml(item.slug)}" data-link>
+      <div class="fragrance-band__image" style="--fragrance-image: url('${escapeHtml(item.image)}');"></div>
       <div class="fragrance-band__overlay"></div>
       <div class="fragrance-band__content">
         <span>${escapeHtml(item.range)}</span>
