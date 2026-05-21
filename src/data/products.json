@@ -1,0 +1,1345 @@
+[
+  {
+    "id": "prf-001",
+    "slug": "minuit",
+    "name": "MINUIT",
+    "russianName": "Полночь",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "classic",
+    "concentration": "Eau de Parfum",
+    "format": "Флакон",
+    "status": "in_stock",
+    "labels": [
+      "бестселлер",
+      "try first"
+    ],
+    "priceFrom": 12900,
+    "priceLabel": "от 12 900 ₽",
+    "short": "Чёрный перец, ирис и амбра в сухом вечернем звучании",
+    "quote": "Момент между закатом и полной тишиной",
+    "story": "Minuit начинается сухой искрой перца, раскрывается холодным ирисом и уходит в глубокую амбровую тишину. Это вечерний аромат без театральности",
+    "notes": {
+      "top": [
+        "чёрный перец",
+        "розовый перец",
+        "кардамон"
+      ],
+      "heart": [
+        "ирис",
+        "фиалка",
+        "ладан"
+      ],
+      "base": [
+        "амбра",
+        "бензоин",
+        "сандал"
+      ]
+    },
+    "accords": [
+      "пряный",
+      "пудровый",
+      "амбровый"
+    ],
+    "mood": "темная элегантность",
+    "season": "осень / зима",
+    "time": "вечер",
+    "intensity": 4,
+    "longevity": 8,
+    "sillage": 3,
+    "variants": [
+      {
+        "id": "minuit-50",
+        "label": "50 мл",
+        "price": 12900,
+        "available": true
+      },
+      {
+        "id": "minuit-100",
+        "label": "100 мл",
+        "price": 20500,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_001.png",
+      "ready": true,
+      "tone": "gold"
+    },
+    "pairWith": [
+      "chambre-noire",
+      "la-nuit-discovery"
+    ],
+    "care": "Наносите на запястья, шею или внутреннюю сторону локтя. Не растирайте после нанесения"
+  },
+  {
+    "id": "prf-002",
+    "slug": "cendres",
+    "name": "CENDRES",
+    "russianName": "Пепел",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "classic",
+    "concentration": "Eau de Parfum",
+    "format": "Флакон",
+    "status": "in_stock",
+    "labels": [
+      "дымный",
+      "унисекс"
+    ],
+    "priceFrom": 14200,
+    "priceLabel": "от 14 200 ₽",
+    "short": "Берёзовый дёготь, ладан и ветивер после утреннего костра",
+    "quote": "Запах утреннего костра, от которого остался только дым",
+    "story": "Cendres соединяет минеральный дым, сухой ветивер и мягкую смолу. Композиция выглядит строгой, но со временем становится теплой и почти кожаной",
+    "notes": {
+      "top": [
+        "берёзовый дёготь",
+        "чёрный чай",
+        "можжевельник"
+      ],
+      "heart": [
+        "ладан",
+        "ветивер",
+        "кашмеран"
+      ],
+      "base": [
+        "смолы",
+        "кожа",
+        "минеральные ноты"
+      ]
+    },
+    "accords": [
+      "дымный",
+      "древесный",
+      "смолистый"
+    ],
+    "mood": "дымный минимализм",
+    "season": "осень",
+    "time": "день / вечер",
+    "intensity": 5,
+    "longevity": 9,
+    "sillage": 4,
+    "variants": [
+      {
+        "id": "cendres-50",
+        "label": "50 мл",
+        "price": 14200,
+        "available": true
+      },
+      {
+        "id": "cendres-100",
+        "label": "100 мл",
+        "price": 22400,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_002.png",
+      "ready": true,
+      "tone": "smoke"
+    },
+    "pairWith": [
+      "terre",
+      "la-nuit-discovery"
+    ],
+    "care": "Лучше раскрывается на ткани и шерсти. Для кожи достаточно одного-двух распылений"
+  },
+  {
+    "id": "prf-003",
+    "slug": "aurore",
+    "name": "AURORE",
+    "russianName": "Рассвет",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "classic",
+    "concentration": "Eau de Parfum",
+    "format": "Флакон",
+    "status": "in_stock",
+    "labels": [
+      "fresh",
+      "daily"
+    ],
+    "priceFrom": 11900,
+    "priceLabel": "от 11 900 ₽",
+    "short": "Бергамот, жасмин, белый мускус и сандал в чистом утреннем профиле",
+    "quote": "Первый луч, который ещё не стал светом",
+    "story": "Aurore держит прозрачность цитрусов и белых цветов, не уходя в сладость. Аромат подходит для утра, офиса и спокойной чистоты",
+    "notes": {
+      "top": [
+        "бергамот",
+        "цедра лимона",
+        "зелёный мандарин"
+      ],
+      "heart": [
+        "жасмин",
+        "нероли",
+        "белые цветы"
+      ],
+      "base": [
+        "белый мускус",
+        "сандал",
+        "светлая амбра"
+      ]
+    },
+    "accords": [
+      "цитрусовый",
+      "мускусный",
+      "цветочный"
+    ],
+    "mood": "свежая нежность",
+    "season": "весна / лето",
+    "time": "утро",
+    "intensity": 2,
+    "longevity": 6,
+    "sillage": 2,
+    "variants": [
+      {
+        "id": "aurore-50",
+        "label": "50 мл",
+        "price": 11900,
+        "available": true
+      },
+      {
+        "id": "aurore-100",
+        "label": "100 мл",
+        "price": 19800,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_003.png",
+      "ready": true,
+      "tone": "light"
+    },
+    "pairWith": [
+      "velours",
+      "la-nuit-discovery"
+    ],
+    "care": "Наносите на чистую кожу утром. На хлопке аромат сохраняет мягкий мускусный след"
+  },
+  {
+    "id": "prf-004",
+    "slug": "terre",
+    "name": "TERRE",
+    "russianName": "Земля",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "classic",
+    "concentration": "Eau de Parfum",
+    "format": "Флакон",
+    "status": "low_stock",
+    "labels": [
+      "мох",
+      "древесный"
+    ],
+    "priceFrom": 13900,
+    "priceLabel": "от 13 900 ₽",
+    "short": "Пачули, дубовый мох, кедр и лабданум с влажной глубиной",
+    "quote": "Корни, которые держат дерево",
+    "story": "Terre звучит как влажная земля после дождя, тёмная древесина и сухая трава. В базе появляется густой лабданум, который делает аромат медленным и устойчивым",
+    "notes": {
+      "top": [
+        "пачули",
+        "зелёные ноты",
+        "лист фиалки"
+      ],
+      "heart": [
+        "дубовый мох",
+        "кедр",
+        "ветивер"
+      ],
+      "base": [
+        "лабданум",
+        "земляистые акценты",
+        "мускус"
+      ]
+    },
+    "accords": [
+      "землистый",
+      "зелёный",
+      "древесный"
+    ],
+    "mood": "глубокая природа",
+    "season": "осень / весна",
+    "time": "день",
+    "intensity": 4,
+    "longevity": 8,
+    "sillage": 3,
+    "variants": [
+      {
+        "id": "terre-50",
+        "label": "50 мл",
+        "price": 13900,
+        "available": true
+      },
+      {
+        "id": "terre-100",
+        "label": "100 мл",
+        "price": 21800,
+        "available": false
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_004.png",
+      "ready": true,
+      "tone": "earth"
+    },
+    "pairWith": [
+      "cendres",
+      "chambre-noire"
+    ],
+    "care": "Особенно хорошо работает на шарфах, пальто и плотных фактурах"
+  },
+  {
+    "id": "prf-005",
+    "slug": "velours",
+    "name": "VELOURS",
+    "russianName": "Бархат",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "classic",
+    "concentration": "Eau de Parfum",
+    "format": "Флакон",
+    "status": "in_stock",
+    "labels": [
+      "новинка",
+      "soft"
+    ],
+    "priceFrom": 15800,
+    "priceLabel": "от 15 800 ₽",
+    "short": "Слива, роза, шафран и замша в мягком вечернем профиле",
+    "quote": "Тёмная ткань, которая помнит прикосновение",
+    "story": "Velours построен вокруг сухой розы, спелой сливы и мягкой замши. Он звучит чувственно, но остается сдержанным и чистым",
+    "notes": {
+      "top": [
+        "слива",
+        "шафран",
+        "розовый перец"
+      ],
+      "heart": [
+        "роза",
+        "ирис",
+        "замша"
+      ],
+      "base": [
+        "бобы тонка",
+        "пачули",
+        "мускус"
+      ]
+    },
+    "accords": [
+      "фруктовый",
+      "замшевый",
+      "цветочный"
+    ],
+    "mood": "бархатная мягкость",
+    "season": "зима / вечер",
+    "time": "вечер",
+    "intensity": 4,
+    "longevity": 7,
+    "sillage": 3,
+    "variants": [
+      {
+        "id": "velours-50",
+        "label": "50 мл",
+        "price": 15800,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_005.png",
+      "ready": true,
+      "tone": "velvet"
+    },
+    "pairWith": [
+      "aurore",
+      "atelier-noir"
+    ],
+    "care": "Дайте аромату пять минут после нанесения: фруктовая верхушка быстро становится мягкой замшей"
+  },
+  {
+    "id": "prf-006",
+    "slug": "lumen",
+    "name": "LUMEN",
+    "russianName": "Свет",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "classic",
+    "concentration": "Parfum Cologne",
+    "format": "Флакон",
+    "status": "in_stock",
+    "labels": [
+      "clean",
+      "office"
+    ],
+    "priceFrom": 12600,
+    "priceLabel": "от 12 600 ₽",
+    "short": "Нероли, чай, белый кедр и мускус с холодным свечением",
+    "quote": "Белая линия на темном стекле",
+    "story": "Lumen сохраняет ДНК NOIR, но звучит светлее. Это чистый чайный аромат с нероли и сухим кедром, который легко носить каждый день",
+    "notes": {
+      "top": [
+        "нероли",
+        "зелёный чай",
+        "альдегиды"
+      ],
+      "heart": [
+        "магнолия",
+        "лист инжира",
+        "мате"
+      ],
+      "base": [
+        "белый кедр",
+        "мускус",
+        "серая амбра"
+      ]
+    },
+    "accords": [
+      "чайный",
+      "чистый",
+      "древесный"
+    ],
+    "mood": "холодный свет",
+    "season": "весна / лето",
+    "time": "день",
+    "intensity": 2,
+    "longevity": 5,
+    "sillage": 2,
+    "variants": [
+      {
+        "id": "lumen-50",
+        "label": "50 мл",
+        "price": 12600,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_006.png",
+      "ready": true,
+      "tone": "lumen"
+    },
+    "pairWith": [
+      "aurore",
+      "la-nuit-discovery"
+    ],
+    "care": "Подходит для повторного нанесения в течение дня благодаря прозрачной концентрации"
+  },
+  {
+    "id": "prf-007",
+    "slug": "obsidienne",
+    "name": "OBSIDIENNE",
+    "russianName": "Обсидиан",
+    "category": "fragrance",
+    "categoryLabel": "Аромат под заказ",
+    "collection": "nocturne",
+    "concentration": "Extrait de Parfum",
+    "format": "Флакон",
+    "status": "on_request",
+    "labels": [
+      "под заказ",
+      "extrait"
+    ],
+    "priceFrom": null,
+    "priceLabel": "цена по запросу",
+    "short": "Уд, чёрная смородина, шафран и кожа в плотном extrait-формате",
+    "quote": "Блеск камня, который не отражает свет",
+    "story": "Obsidienne выпускается малыми партиями. Композиция строится вокруг сухого уда, тёмной ягоды и холодной кожи, поэтому требует консультации перед покупкой",
+    "notes": {
+      "top": [
+        "чёрная смородина",
+        "шафран",
+        "тимьян"
+      ],
+      "heart": [
+        "уд",
+        "кожа",
+        "ладан"
+      ],
+      "base": [
+        "пачули",
+        "кастореум",
+        "тёмная амбра"
+      ]
+    },
+    "accords": [
+      "удовый",
+      "кожаный",
+      "ягодный"
+    ],
+    "mood": "ночной ритуал",
+    "season": "зима",
+    "time": "ночь",
+    "intensity": 5,
+    "longevity": 10,
+    "sillage": 4,
+    "variants": [
+      {
+        "id": "obsidienne-30",
+        "label": "30 мл",
+        "price": null,
+        "available": false
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_007.png",
+      "ready": true,
+      "tone": "obsidian"
+    },
+    "pairWith": [
+      "velours",
+      "cendres"
+    ],
+    "care": "Перед заказом рекомендуем пробник или встречу в бутике"
+  },
+  {
+    "id": "prf-008",
+    "slug": "sylhour-noir",
+    "name": "SYLHOUR NOIR",
+    "russianName": "Сильур Нуар",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "nocturne",
+    "concentration": "Eau de Parfum",
+    "format": "Флакон",
+    "status": "in_stock",
+    "labels": [
+      "лимитированный тираж"
+    ],
+    "priceFrom": 18400,
+    "priceLabel": "18 400 ₽",
+    "short": "Лимитированная линия — откройте ночной профиль коллекции NOIR",
+    "quote": "Лимитированный тираж — откройте линию",
+    "story": "Sylhour Noir — эксклюзивная позиция линии NOIR с плотным вечерним звучанием и ограниченным выпуском",
+    "notes": {
+      "top": [
+        "бергамот",
+        "чёрный перец",
+        "шафран"
+      ],
+      "heart": [
+        "ирис",
+        "ладан",
+        "роза"
+      ],
+      "base": [
+        "амбра",
+        "пачули",
+        "сандал"
+      ]
+    },
+    "accords": [
+      "амбровый",
+      "пряный",
+      "дымный"
+    ],
+    "mood": "ночная элегантность",
+    "season": "осень / зима",
+    "time": "вечер",
+    "intensity": 4,
+    "longevity": 8,
+    "sillage": 4,
+    "variants": [
+      {
+        "id": "sylhour-noir-50",
+        "label": "50 мл",
+        "price": 18400,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_008.png",
+      "ready": true,
+      "tone": "noir"
+    },
+    "pairWith": [
+      "obsidienne",
+      "cendres"
+    ],
+    "care": "Наносите на запястья, шею или внутреннюю сторону локтя. Не растирайте после нанесения"
+  },
+  {
+    "id": "set-001",
+    "slug": "la-nuit-discovery",
+    "name": "LA NUIT",
+    "russianName": "Набор пробников",
+    "category": "discovery",
+    "categoryLabel": "Набор",
+    "collection": "discovery",
+    "concentration": "6 x 2 мл",
+    "format": "Набор пробников",
+    "status": "in_stock",
+    "labels": [
+      "gift",
+      "first order"
+    ],
+    "priceFrom": 3900,
+    "priceLabel": "3 900 ₽",
+    "short": "Шесть ароматов NOIR в пробниках 2 мл и промокод на полноразмерный флакон",
+    "quote": "Небольшая коробка для точного выбора",
+    "story": "Набор создан для первого знакомства с коллекцией. Внутри Minuit, Cendres, Aurore, Terre, Velours и Lumen, а также карта для заметок",
+    "notes": {
+      "top": [
+        "Minuit",
+        "Cendres"
+      ],
+      "heart": [
+        "Aurore",
+        "Terre"
+      ],
+      "base": [
+        "Velours",
+        "Lumen"
+      ]
+    },
+    "accords": [
+      "пробники",
+      "подарок",
+      "выбор"
+    ],
+    "mood": "знакомство",
+    "season": "весь год",
+    "time": "любой",
+    "intensity": 3,
+    "longevity": 6,
+    "sillage": 2,
+    "variants": [
+      {
+        "id": "la-nuit-discovery-6",
+        "label": "6 x 2 мл",
+        "price": 3900,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_009.png",
+      "ready": true,
+      "tone": "set"
+    },
+    "pairWith": [
+      "minuit",
+      "aurore"
+    ],
+    "care": "Пробники рассчитаны на несколько полноценных нанесений каждого аромата"
+  },
+  {
+    "id": "home-001",
+    "slug": "chambre-noire",
+    "name": "CHAMBRE NOIRE",
+    "russianName": "Тёмная комната",
+    "category": "home",
+    "categoryLabel": "Дом",
+    "collection": "home",
+    "concentration": "Свеча 220 г",
+    "format": "Candle",
+    "status": "in_stock",
+    "labels": [
+      "home",
+      "gift"
+    ],
+    "priceFrom": 7400,
+    "priceLabel": "7 400 ₽",
+    "short": "Свеча с нотами чёрного чая, дерева, ладана и сухого табака",
+    "quote": "Комната, где свет оставили только на стекле",
+    "story": "Chambre Noire продолжает атмосферу Cendres и Minuit, но звучит мягче в интерьере. Подходит для вечера, чтения и небольших пространств",
+    "notes": {
+      "top": [
+        "чёрный чай",
+        "корица"
+      ],
+      "heart": [
+        "ладан",
+        "сухое дерево"
+      ],
+      "base": [
+        "табак",
+        "амбра",
+        "воск"
+      ]
+    },
+    "accords": [
+      "чайный",
+      "дымный",
+      "домашний"
+    ],
+    "mood": "камерный вечер",
+    "season": "осень / зима",
+    "time": "вечер",
+    "intensity": 3,
+    "longevity": 5,
+    "sillage": 3,
+    "variants": [
+      {
+        "id": "chambre-noire-220",
+        "label": "220 г",
+        "price": 7400,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_010.png",
+      "ready": true,
+      "tone": "home"
+    },
+    "pairWith": [
+      "terre",
+      "minuit"
+    ],
+    "care": "Первое горение должно длиться 2-3 часа, чтобы воск расплавился равномерно"
+  },
+  {
+    "id": "atl-001",
+    "slug": "atelier-noir",
+    "name": "ATELIER NOIR",
+    "russianName": "Индивидуальный аромат",
+    "category": "atelier",
+    "categoryLabel": "Atelier",
+    "collection": "nocturne",
+    "concentration": "Bespoke",
+    "format": "Консультация",
+    "status": "on_request",
+    "labels": [
+      "под заказ",
+      "bespoke"
+    ],
+    "priceFrom": null,
+    "priceLabel": "после консультации",
+    "short": "Персональная работа с парфюмером: бриф, пробные модификации и финальный флакон",
+    "quote": "Аромат, который не повторяется на полке",
+    "story": "Atelier Noir — сервис для частных и корпоративных заказов. Процесс включает анкету, встречу, 2-3 модификации и финальное оформление",
+    "notes": {
+      "top": [
+        "бриф"
+      ],
+      "heart": [
+        "модификации"
+      ],
+      "base": [
+        "финальный флакон"
+      ]
+    },
+    "accords": [
+      "индивидуально",
+      "подарок",
+      "корпоративно"
+    ],
+    "mood": "личный ритуал",
+    "season": "весь год",
+    "time": "по записи",
+    "intensity": 4,
+    "longevity": 8,
+    "sillage": 3,
+    "variants": [
+      {
+        "id": "atelier-noir-request",
+        "label": "заявка",
+        "price": null,
+        "available": false
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_011.png",
+      "ready": true,
+      "tone": "atelier"
+    },
+    "pairWith": [
+      "velours",
+      "obsidienne"
+    ],
+    "care": "После заявки менеджер уточнит задачу, сроки и желаемый профиль аромата"
+  },
+  {
+    "id": "prf-009",
+    "slug": "encens",
+    "name": "ENCENS",
+    "russianName": "Ладан",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "classic",
+    "concentration": "Eau de Parfum",
+    "format": "Флакон",
+    "status": "in_stock",
+    "labels": [
+      "дымный",
+      "ритуал"
+    ],
+    "priceFrom": 13500,
+    "priceLabel": "от 13 500 ₽",
+    "short": "Ладан, смирна и сандал в сухом храмовом дыме",
+    "quote": "Дым, который не просит внимания",
+    "story": "Encens строится вокруг сухого ладана и тёплой смирны без сладкой благовонности. Аромат для вечера, когда нужна тишина, а не декорация",
+    "notes": {
+      "top": [
+        "бергамот",
+        "элеутерия",
+        "чёрный перец"
+      ],
+      "heart": [
+        "ладан",
+        "смирна",
+        "кедр"
+      ],
+      "base": [
+        "сандал",
+        "бензоин",
+        "амбра"
+      ]
+    },
+    "accords": [
+      "дымный",
+      "смолистый",
+      "древесный"
+    ],
+    "mood": "храмовая тишина",
+    "season": "осень / зима",
+    "time": "вечер",
+    "intensity": 4,
+    "longevity": 8,
+    "sillage": 3,
+    "variants": [
+      {
+        "id": "encens-50",
+        "label": "50 мл",
+        "price": 13500,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_012.png",
+      "ready": true,
+      "tone": "incense"
+    },
+    "pairWith": [
+      "cendres",
+      "chambre-noire"
+    ],
+    "care": "Достаточно одного распыления на шею или воротник пальто"
+  },
+  {
+    "id": "prf-010",
+    "slug": "nebuleuse",
+    "name": "NÉBULEUSE",
+    "russianName": "Туманность",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "classic",
+    "concentration": "Eau de Toilette",
+    "format": "Флакон",
+    "status": "in_stock",
+    "labels": [
+      "лёгкий",
+      "унисекс"
+    ],
+    "priceFrom": 11200,
+    "priceLabel": "от 11 200 ₽",
+    "short": "Альдегиды, ирис и белый мускус в прозрачном холодном облаке",
+    "quote": "Туман, который не мокнет",
+    "story": "Nébuleuse держит воздушную прозрачность ириса и мягких альдегидов. Подходит для офиса, путешествий и слоёв с более плотными ароматами NOIR",
+    "notes": {
+      "top": [
+        "альдегиды",
+        "бергамот",
+        "розовый перец"
+      ],
+      "heart": [
+        "ирис",
+        "фиалка",
+        "магнолия"
+      ],
+      "base": [
+        "белый мускус",
+        "кедр",
+        "светлая амбра"
+      ]
+    },
+    "accords": [
+      "пудровый",
+      "чистый",
+      "мускусный"
+    ],
+    "mood": "холодная дымка",
+    "season": "весна / лето",
+    "time": "день",
+    "intensity": 2,
+    "longevity": 5,
+    "sillage": 2,
+    "variants": [
+      {
+        "id": "nebuleuse-50",
+        "label": "50 мл",
+        "price": 11200,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_013.png",
+      "ready": true,
+      "tone": "mist"
+    },
+    "pairWith": [
+      "aurore",
+      "lumen"
+    ],
+    "care": "Можно наносить на ткань для более мягкого шлейфа"
+  },
+  {
+    "id": "prf-011",
+    "slug": "fer-noir",
+    "name": "FER NOIR",
+    "russianName": "Чёрное железо",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "nocturne",
+    "concentration": "Eau de Parfum",
+    "format": "Флакон",
+    "status": "in_stock",
+    "labels": [
+      "минеральный",
+      "новинка"
+    ],
+    "priceFrom": 14900,
+    "priceLabel": "от 14 900 ₽",
+    "short": "Металл, соль, ветивер и кожа в холодном индустриальном профиле",
+    "quote": "Запах ночного цеха после остановки станков",
+    "story": "Fer Noir соединяет минеральную соль, сухой ветивер и тёмную кожу. Звучит строго и современно, без сладости и цветочной декорации",
+    "notes": {
+      "top": [
+        "соль",
+        "бергамот",
+        "альдегиды"
+      ],
+      "heart": [
+        "ветивер",
+        "кожа",
+        "ирис"
+      ],
+      "base": [
+        "дубовый мох",
+        "амбровые акценты",
+        "мускус"
+      ]
+    },
+    "accords": [
+      "минеральный",
+      "кожаный",
+      "древесный"
+    ],
+    "mood": "холодный металл",
+    "season": "осень / зима",
+    "time": "вечер",
+    "intensity": 4,
+    "longevity": 7,
+    "sillage": 3,
+    "variants": [
+      {
+        "id": "fer-noir-50",
+        "label": "50 мл",
+        "price": 14900,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_014.png",
+      "ready": true,
+      "tone": "iron"
+    },
+    "pairWith": [
+      "obsidienne",
+      "cendres"
+    ],
+    "care": "Лучше раскрывается на коже, чем на синтетических тканях"
+  },
+  {
+    "id": "prf-012",
+    "slug": "opale",
+    "name": "OPALE",
+    "russianName": "Опал",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "classic",
+    "concentration": "Eau de Parfum",
+    "format": "Флакон",
+    "status": "in_stock",
+    "labels": [
+      "цветочный",
+      "soft"
+    ],
+    "priceFrom": 13100,
+    "priceLabel": "от 13 100 ₽",
+    "short": "Гелиотроп, жасмин, сандал и ваниль в мягком перламутровом свете",
+    "quote": "Свет, который не ослепляет",
+    "story": "Opale — нежный цветочно-пудровый аромат с сухой ванилью и сандалом. Звучит женственно, но остаётся чистым и без приторности",
+    "notes": {
+      "top": [
+        "мандарин",
+        "гелиотроп",
+        "розовый перец"
+      ],
+      "heart": [
+        "жасмин",
+        "орхидея",
+        "ирис"
+      ],
+      "base": [
+        "сандал",
+        "ваниль",
+        "белый мускус"
+      ]
+    },
+    "accords": [
+      "пудровый",
+      "цветочный",
+      "кремовый"
+    ],
+    "mood": "перламутровая нежность",
+    "season": "весна / осень",
+    "time": "день / вечер",
+    "intensity": 3,
+    "longevity": 7,
+    "sillage": 2,
+    "variants": [
+      {
+        "id": "opale-50",
+        "label": "50 мл",
+        "price": 13100,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_015.png",
+      "ready": true,
+      "tone": "opal"
+    },
+    "pairWith": [
+      "velours",
+      "aurore"
+    ],
+    "care": "Наносите на запястья и зону декольте для мягкого цветочного следа"
+  },
+  {
+    "id": "home-002",
+    "slug": "brume-interieure",
+    "name": "BRUME INTÉRIEURE",
+    "russianName": "Внутренний туман",
+    "category": "home",
+    "categoryLabel": "Дом",
+    "collection": "home",
+    "concentration": "Спрей 100 мл",
+    "format": "Room spray",
+    "status": "in_stock",
+    "labels": [
+      "home",
+      "интерьер"
+    ],
+    "priceFrom": 5200,
+    "priceLabel": "5 200 ₽",
+    "short": "Интерьерный спрей с нотами белого чая, кедра и светлого мускуса",
+    "quote": "Воздух комнаты после проветривания",
+    "story": "Brume Intérieure освежает пространство без агрессивной химии. Подходит для спальни, кабинета и небольших гостиных",
+    "notes": {
+      "top": [
+        "белый чай",
+        "бергамот"
+      ],
+      "heart": [
+        "кедр",
+        "ирис"
+      ],
+      "base": [
+        "мускус",
+        "светлая амбра"
+      ]
+    },
+    "accords": [
+      "чайный",
+      "чистый",
+      "домашний"
+    ],
+    "mood": "свежий интерьер",
+    "season": "весь год",
+    "time": "день",
+    "intensity": 2,
+    "longevity": 4,
+    "sillage": 2,
+    "variants": [
+      {
+        "id": "brume-interieure-100",
+        "label": "100 мл",
+        "price": 5200,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_016.png",
+      "ready": true,
+      "tone": "home-mist"
+    },
+    "pairWith": [
+      "chambre-noire",
+      "nebuleuse"
+    ],
+    "care": "Распыляйте в воздух, избегая прямого попадания на мебель с лаковым покрытием"
+  },
+  {
+    "id": "set-002",
+    "slug": "carte-noire",
+    "name": "CARTE NOIRE",
+    "russianName": "Чёрная карта",
+    "category": "discovery",
+    "categoryLabel": "Набор",
+    "collection": "discovery",
+    "concentration": "3 x 2 мл",
+    "format": "Набор пробников",
+    "status": "in_stock",
+    "labels": [
+      "компактный",
+      "подарок"
+    ],
+    "priceFrom": 2400,
+    "priceLabel": "2 400 ₽",
+    "short": "Три ночных аромата NOIR в пробниках 2 мл для быстрого выбора",
+    "quote": "Минимальный набор для точного решения",
+    "story": "Carte Noire включает Minuit, Cendres и Obsidienne — три плотных профиля линии. Удобен в дороге и как подарок к первому заказу",
+    "notes": {
+      "top": [
+        "Minuit"
+      ],
+      "heart": [
+        "Cendres"
+      ],
+      "base": [
+        "Obsidienne"
+      ]
+    },
+    "accords": [
+      "пробники",
+      "ночь",
+      "выбор"
+    ],
+    "mood": "компактный выбор",
+    "season": "весь год",
+    "time": "любой",
+    "intensity": 3,
+    "longevity": 6,
+    "sillage": 2,
+    "variants": [
+      {
+        "id": "carte-noire-3",
+        "label": "3 x 2 мл",
+        "price": 2400,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_017.png",
+      "ready": true,
+      "tone": "set-dark"
+    },
+    "pairWith": [
+      "la-nuit-discovery",
+      "sylhour-noir"
+    ],
+    "care": "Храните набор вдали от прямого солнца и тепла"
+  },
+  {
+    "id": "prf-013",
+    "slug": "absinthe",
+    "name": "ABSINTHE",
+    "russianName": "Абсент",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "nocturne",
+    "concentration": "Eau de Parfum",
+    "format": "Флакон",
+    "status": "in_stock",
+    "labels": [
+      "зелёный",
+      "горький"
+    ],
+    "priceFrom": 14600,
+    "priceLabel": "от 14 600 ₽",
+    "short": "Артемизия, петитгрейн, кожа и дубовый мох в горьком ночном профиле",
+    "quote": "Зелень, которая не успокаивает",
+    "story": "Absinthe построен на горькой полыни и сухом цитрусе. Аромат для тех, кто любит зелёные и кожаные композиции без сладости",
+    "notes": {
+      "top": [
+        "петитгрейн",
+        "базилик",
+        "бергамот"
+      ],
+      "heart": [
+        "артемизия",
+        "ветивер",
+        "кожа"
+      ],
+      "base": [
+        "дубовый мох",
+        "пачули",
+        "амбра"
+      ]
+    },
+    "accords": [
+      "зелёный",
+      "горький",
+      "кожаный"
+    ],
+    "mood": "горькая ночь",
+    "season": "весна / осень",
+    "time": "вечер",
+    "intensity": 4,
+    "longevity": 8,
+    "sillage": 3,
+    "variants": [
+      {
+        "id": "absinthe-50",
+        "label": "50 мл",
+        "price": 14600,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_018.png",
+      "ready": true,
+      "tone": "green"
+    },
+    "pairWith": [
+      "fer-noir",
+      "terre"
+    ],
+    "care": "Дайте аромату десять минут — зелёная верхушка уступает место коже и моху"
+  },
+  {
+    "id": "prf-014",
+    "slug": "veille",
+    "name": "VEILLE",
+    "russianName": "Дозор",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "nocturne",
+    "concentration": "Extrait de Parfum",
+    "format": "Флакон",
+    "status": "low_stock",
+    "labels": [
+      "extrait",
+      "кожа"
+    ],
+    "priceFrom": 17200,
+    "priceLabel": "от 17 200 ₽",
+    "short": "Кожа, табак, ладан и уд в плотном ночном extrait",
+    "quote": "Часы, которые не спят",
+    "story": "Veille — густой extrait для позднего вечера. Кожа и табак держатся долго, ладан добавляет сухой дым без театральности",
+    "notes": {
+      "top": [
+        "шафран",
+        "чёрный перец",
+        "бергамот"
+      ],
+      "heart": [
+        "кожа",
+        "табак",
+        "ладан"
+      ],
+      "base": [
+        "уд",
+        "пачули",
+        "тёмная амбра"
+      ]
+    },
+    "accords": [
+      "кожаный",
+      "табачный",
+      "удовый"
+    ],
+    "mood": "ночной дозор",
+    "season": "зима",
+    "time": "ночь",
+    "intensity": 5,
+    "longevity": 10,
+    "sillage": 4,
+    "variants": [
+      {
+        "id": "veille-30",
+        "label": "30 мл",
+        "price": 17200,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_019.png",
+      "ready": true,
+      "tone": "watch"
+    },
+    "pairWith": [
+      "obsidienne",
+      "sylhour-noir"
+    ],
+    "care": "Extrait требует минимального количества — одно касание на точку пульса"
+  },
+  {
+    "id": "prf-015",
+    "slug": "miroir",
+    "name": "MIROIR",
+    "russianName": "Зеркало",
+    "category": "fragrance",
+    "categoryLabel": "Аромат",
+    "collection": "classic",
+    "concentration": "Parfum Cologne",
+    "format": "Флакон",
+    "status": "in_stock",
+    "labels": [
+      "clean",
+      "зеркальный"
+    ],
+    "priceFrom": 12400,
+    "priceLabel": "от 12 400 ₽",
+    "short": "Альдегиды, роза, серая амбра и мускус в холодном отражённом свете",
+    "quote": "Отражение без лишних деталей",
+    "story": "Miroir сочетает сухую розу, холодные альдегиды и прозрачный мускус. Подходит как ежедневный аромат и как слой под более плотные композиции",
+    "notes": {
+      "top": [
+        "альдегиды",
+        "лимон",
+        "розовый перец"
+      ],
+      "heart": [
+        "роза",
+        "ирис",
+        "жасмин"
+      ],
+      "base": [
+        "серая амбра",
+        "мускус",
+        "белый кедр"
+      ]
+    },
+    "accords": [
+      "чистый",
+      "цветочный",
+      "амбровый"
+    ],
+    "mood": "холодное отражение",
+    "season": "весна / лето",
+    "time": "день",
+    "intensity": 2,
+    "longevity": 6,
+    "sillage": 2,
+    "variants": [
+      {
+        "id": "miroir-50",
+        "label": "50 мл",
+        "price": 12400,
+        "available": true
+      }
+    ],
+    "image": {
+      "src": "/images/products/flacons/image_part_020.png",
+      "ready": true,
+      "tone": "mirror"
+    },
+    "pairWith": [
+      "lumen",
+      "nebuleuse"
+    ],
+    "care": "Можно наносить повторно в течение дня — концентрация остаётся прозрачной"
+  }
+]

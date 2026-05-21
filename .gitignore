@@ -1,0 +1,81 @@
+# NOIR Parfum — Vite + vanilla JS (npm, Vitest, Playwright)
+
+# --- Dependencies ---
+node_modules/
+
+# --- Build & bundler output ---
+dist/
+build/
+*.tsbuildinfo
+
+# Vite cache (project-local, if created outside node_modules)
+.vite/
+
+# --- Environment & secrets ---
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# --- Logs & debug ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Test runners ---
+# Vitest
+coverage/
+
+# Playwright
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
+# --- Local overrides ---
+*.local
+
+# --- OS (Windows + macOS + Linux) ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# --- IDE & editor ---
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Cursor (local agent/editor state; optional)
+.cursor/
+
+# --- Deploy / hosting (generated locally) ---
+.vercel/
+
+# --- Misc ---
+*.pem
+.cache/
+.temp/
+.tmp/
+*.tgz
+
+# Product assets under public/images/ are tracked — do not ignore.

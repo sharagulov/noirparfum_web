@@ -1,0 +1,22 @@
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141414;
+  --bg-elevated: #1c1c1c;
+  --bg-soft: #101010;
+  --text-primary: #f5f0eb;
+  --text-secondary: #8a8580;
+  --text-muted: #615d58;
+  --accent: #b8966c;
+  --accent-hover: #d4b48c;
+  --accent-muted: rgba(184, 150, 108, 0.2);
+  --line: rgba(184, 150, 108, 0.16);
+  --line-strong: rgba(184, 150, 108, 0.34);
+  --shadow: rgba(0, 0, 0, 0.38);
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-accent: "Cormorant SC", Georgia, serif;
+  --font-body: Inter, system-ui, sans-serif;
+  --container: min(1180px, 100% - 32px);
+  --container-wide: min(1360px, 100% - 32px);
+  --header-h: 78px;
+  --ease-out: cubic-bezier(0.25, 0.1, 0.25, 1);
+}

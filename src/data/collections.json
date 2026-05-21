@@ -1,0 +1,30 @@
+[
+  {
+    "id": "classic",
+    "title": "Основная коллекция",
+    "name": "Основная коллекция",
+    "description": "Ключевые ароматы в формате 50 и 100 мл",
+    "heroProduct": "minuit"
+  },
+  {
+    "id": "nocturne",
+    "title": "Ноктюрн",
+    "name": "Ночная линия",
+    "description": "Плотные композиции и позиции под запрос",
+    "heroProduct": "obsidienne"
+  },
+  {
+    "id": "discovery",
+    "title": "Наборы",
+    "name": "Пробники и наборы",
+    "description": "Пробники для первого заказа и подарочного сценария",
+    "heroProduct": "la-nuit-discovery"
+  },
+  {
+    "id": "home",
+    "title": "Домашние ритуалы",
+    "name": "Домашние ритуалы",
+    "description": "Свечи и интерьерные форматы для дома",
+    "heroProduct": "chambre-noire"
+  }
+]
