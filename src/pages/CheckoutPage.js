@@ -84,7 +84,7 @@ export function CheckoutPage() {
           </fieldset>
 
           <fieldset>
-            <legend>Подарочный ритуал</legend>
+            <legend>Подарочная упаковка</legend>
             <div class="form-grid">
               <label>Пробник 1<select name="sample1">${service.checkout.sampleChoices.map((item) => `<option>${escapeHtml(item)}</option>`).join("")}</select></label>
               <label>Пробник 2<select name="sample2">${service.checkout.sampleChoices.map((item) => `<option>${escapeHtml(item)}</option>`).join("")}</select></label>

@@ -1,4 +1,5 @@
 import { bindCommon } from "./components/bindCommon.js";
+import { bindProductSort } from "./components/bindProductSort.js";
 import { PageShell } from "./components/Layout.js";
 import { AboutPage } from "./pages/AboutPage.js";
 import { bindCartPage, CartPage } from "./pages/CartPage.js";
@@ -18,6 +19,7 @@ export function render(options = {}) {
   if (!app) return;
   app.innerHTML = PageShell(route.html, path);
   bindCommon();
+  bindProductSort();
   route.bind?.();
   reveal();
   if (location.hash) {

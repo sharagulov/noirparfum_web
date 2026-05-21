@@ -17,8 +17,9 @@
 
 .site-header__inner {
   width: var(--container-wide);
+  max-width: calc(100% - 84px);
   min-height: var(--header-h);
-  margin-inline: auto;
+  margin-inline: 42px;
   display: flex;
   align-items: center;
   justify-content: space-between;

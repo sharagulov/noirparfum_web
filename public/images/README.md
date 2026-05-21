@@ -1,30 +1,17 @@
-# Изображения (PNG)
-
-Кладите файлы в эту папку. Сайт ожидает **PNG** (не WebP).
+# Изображения
 
 ## Структура
 
-- `brand/hero.png` — главный экран.
-- `editorial/about.png` — блок о бренде.
-
-## Товары (`products/`)
-
-- `products/minuit.png`
-- `products/cendres.png`
-- `products/aurore.png`
-- `products/terre.png`
-- `products/velours.png`
-- `products/lumen.png`
-- `products/obsidienne.png`
-- `products/discovery.png`
-- `products/chambre-noire.png`
-- `products/atelier-noir.png`
+- `brand/hero.png`, `hero.webp` — OG и брендинг.
+- `editorial/about.png`, `about.webp` — блок о бренде.
+- `products/hero-main.jpg` — фон главной (SYLHOUR NOIR).
+- `products/flacons/{slug}.png` — флаконы для карточек каталога (имя = `slug` из `products.json`).
 
 ## Секции (`sections/`)
 
-Пути совпадают с подсказками на заглушках в интерфейсе, например:
-
-- `sections/duhi/duhi.png`, `parfyumernaya-voda.png`, …
-- `sections/dom/svechi.png`, …
+- `duhi/` — `duhi.png`, `parfyumernaya-voda.png`, `tualetnaya-voda.png`, `odekolon.png`
+- `dom/` — `svechi.png`, `diffuzory.webp`, `tekstil-i-sprei.webp`
+- `uhod-i-podarki/` — `grooming.png`, `gift-set.png`, `discovery-set.webp`
+- `kontent-i-brend/` — `novinki.png`, `moon.png`, `stars.png`
 
 После добавления файла обновите страницу в браузере.

@@ -15,7 +15,11 @@ export function bindCommon() {
     document.body.classList.toggle("nav-open", !!open);
   });
 
-  document.querySelectorAll("[data-link]").forEach((link) => {
+  bindInteractive();
+}
+
+export function bindInteractive(scope = document) {
+  scope.querySelectorAll("[data-link]").forEach((link) => {
     link.addEventListener("click", (event) => {
       const href = link.getAttribute("href");
       if (!href || href.startsWith("http") || href.startsWith("mailto:")) return;
@@ -26,7 +30,7 @@ export function bindCommon() {
     });
   });
 
-  document.querySelectorAll("[data-add-cart]").forEach((button) => {
+  scope.querySelectorAll("[data-add-cart]").forEach((button) => {
     button.addEventListener("click", () => {
       const added = addToCart(button.dataset.addCart, button.dataset.variant);
       render({ preserveScroll: true });
@@ -34,7 +38,7 @@ export function bindCommon() {
     });
   });
 
-  document.querySelectorAll("[data-compare]").forEach((button) => {
+  scope.querySelectorAll("[data-compare]").forEach((button) => {
     button.addEventListener("click", () => {
       toggleCompare(button.dataset.compare);
       render({ preserveScroll: true });

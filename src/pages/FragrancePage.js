@@ -1,6 +1,11 @@
 import { ProductCard } from "../components/ProductCard.js";
-import { getProducts } from "../lib/catalog.js";
+import { getStoredSort, ProductSort, sortableGridAttrs } from "../components/ProductSort.js";
+import { SectionTitle } from "../components/SectionTitle.js";
+import { getProducts, sortProducts } from "../lib/catalog.js";
 import { escapeHtml } from "../lib/format.js";
+
+const isFragranceProduct = (product) => product.category === "fragrance";
+const isHomeProduct = (product) => product.category === "home";
 
 const sectionsConfig = {
   duhi: {
@@ -57,7 +62,7 @@ const sectionsConfig = {
         range: "HOME",
         subtitle: "Ароматические свечи для интерьера",
         description: "Классические свечи и коллекционные форматы для пространства",
-        image: "/images/products/DSF1475-2_upscayl_8x_upscayl-standard-4x.png",
+        image: "/images/products/home_categories/svechi.webp",
         filter: (product) => product.category === "home",
       },
       {
@@ -66,16 +71,16 @@ const sectionsConfig = {
         range: "HOME",
         subtitle: "Постоянный аромат в пространстве",
         description: "Подбор по интенсивности и площади помещения",
-        image: "/images/products/terre.webp",
+        image: "/images/products/home_categories/diffuzory.webp",
         filter: (product) => product.category === "home",
       },
       {
         slug: "tekstil-i-sprei",
         title: "ТЕКСТИЛЬ И СПРЕИ",
         range: "HOME",
-        subtitle: "Лёгкие форматы для домашнего ритуала",
+        subtitle: "Лёгкие форматы для дома",
         description: "Ароматизация текстиля и точечное применение в интерьере",
-        image: "/images/products/aurore.webp",
+        image: "/images/products/home_categories/tekstil-i-sprei.webp",
         filter: (product) => product.category === "home",
       },
     ],
@@ -90,7 +95,7 @@ const sectionsConfig = {
         range: "CARE",
         subtitle: "Форматы для ежедневного ухода",
         description: "Линейка ухода с фокусом на аромат и текстуру",
-        image: "/images/products/MeltedSummer.png",
+        image: "/images/sections/uhod-i-podarki/grooming.png",
         filter: (product) => product.category === "home",
       },
       {
@@ -99,7 +104,7 @@ const sectionsConfig = {
         range: "GIFT",
         subtitle: "Собранные решения для подарка",
         description: "Готовые наборы и позиции для персонального выбора",
-        image: "/images/products/MainImage.jpg",
+        image: "/images/sections/uhod-i-podarki/gift-set.png",
         filter: (product) => product.category === "discovery",
       },
       {
@@ -108,7 +113,7 @@ const sectionsConfig = {
         range: "DISCOVERY",
         subtitle: "Первый шаг перед полноразмерным флаконом",
         description: "Пробники для точного подбора аромата",
-        image: "/images/products/DSF1475-2.webp",
+        image: "/images/sections/uhod-i-podarki/discovery-set.webp",
         filter: (product) => product.category === "discovery",
       },
     ],
@@ -123,7 +128,7 @@ const sectionsConfig = {
         range: "БРЕНД",
         subtitle: "Актуальные релизы и фокусные позиции",
         description: "Подборка текущих и ближайших запусков",
-        image: "/images/products/Major_Tom_upscayl_8x_upscayl-standard-4x.png",
+        image: "/images/sections/kontent-i-brend/novinki.png",
         filter: (product) => product.category === "fragrance",
       },
       {
@@ -166,25 +171,102 @@ function getSubsectionHeroLine(item) {
 }
 
 function renderSubsectionNav(sectionSlug, sectionConfig, activeSlug) {
-  const siblings = sectionConfig.items
-    .filter((item) => item.slug !== activeSlug)
-    .map(
-      (item) =>
-        `<a class="subsection-nav__link" href="/${escapeHtml(sectionSlug)}/${escapeHtml(item.slug)}" data-link>${escapeHtml(item.title)}</a>`
-    )
+  const isLanding = activeSlug == null || activeSlug === "";
+  const backClass = `subsection-nav__back${isLanding ? " is-active" : ""}`;
+  const backAria = isLanding ? ' aria-current="page"' : "";
+
+  const links = sectionConfig.items
+    .map((item) => {
+      const isActive = item.slug === activeSlug;
+      const linkClass = `subsection-nav__link${isActive ? " is-active" : ""}`;
+      const aria = isActive ? ' aria-current="page"' : "";
+      return `<a class="${linkClass}" href="/${escapeHtml(sectionSlug)}/${escapeHtml(item.slug)}" data-link${aria}>${escapeHtml(item.title)}</a>`;
+    })
     .join("");
 
   return `
     <nav class="subsection-nav" aria-label="Подразделы">
-      <a class="subsection-nav__back" href="/${escapeHtml(sectionSlug)}" data-link>Все подразделы</a>
-      <div class="subsection-nav__links">${siblings}</div>
+      <a class="${backClass}" href="/${escapeHtml(sectionSlug)}" data-link${backAria}>Все подразделы</a>
+      <div class="subsection-nav__links">${links}</div>
     </nav>
+  `;
+}
+
+function renderLandingProductsSection({ title, filter, emptyHint }) {
+  const filtered = getProducts().filter(filter);
+  const slugs = filtered.map((product) => product.slug);
+  const sort = getStoredSort();
+  const products = sortProducts(filtered, sort);
+
+  return `
+    <section class="section section-landing-products">
+      <div class="container">
+        ${SectionTitle({ title })}
+        <div class="catalog-toolbar catalog-toolbar--subsection">
+          <div class="catalog-toolbar__meta">
+            <p>${products.length} ${products.length === 1 ? "позиция" : "позиций"}</p>
+          </div>
+          ${products.length ? ProductSort({ active: sort }) : ""}
+        </div>
+        <div class="product-grid product-grid--catalog" ${sortableGridAttrs(slugs)}>
+          ${
+            products.length
+              ? products.map((product) => ProductCard(product)).join("")
+              : `
+                <div class="empty-state">
+                  <h2>Пока пусто</h2>
+                  <p>${escapeHtml(emptyHint)}</p>
+                </div>
+              `
+          }
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+function renderFragranceBand(item, sectionSlug, { compact = false } = {}) {
+  const bandClass = compact ? "fragrance-band fragrance-band--compact" : "fragrance-band";
+  return `
+    <a class="${bandClass}" href="/${escapeHtml(sectionSlug)}/${escapeHtml(item.slug)}" data-link style="--fragrance-image: url('${escapeHtml(item.image)}');">
+      <div class="fragrance-band__image"></div>
+      <div class="fragrance-band__overlay"></div>
+      <div class="fragrance-band__content">
+        <span>${escapeHtml(item.range)}</span>
+        <h2>${escapeHtml(item.title)}</h2>
+        <p>${escapeHtml(item.subtitle)}</p>
+        <small>${escapeHtml(item.description)}</small>
+      </div>
+    </a>
   `;
 }
 
 export function SectionLandingPage(sectionSlug) {
   const section = getSectionConfig(sectionSlug);
   if (!section) return null;
+
+  const isDuhi = sectionSlug === "duhi";
+  const isDom = sectionSlug === "dom";
+  const useCompactLanding = isDuhi || isDom;
+  const bandsLayoutClass = useCompactLanding ? "fragrance-grid--compact" : "fragrance-stack";
+  const landingSectionClass = isDuhi ? " section-landing--duhi" : isDom ? " section-landing--dom" : "";
+  const bands = section.items.map((item) => renderFragranceBand(item, sectionSlug, { compact: useCompactLanding })).join("");
+
+  let productsSection = "";
+  if (isDuhi) {
+    productsSection = renderLandingProductsSection({
+      title: "Все ароматы",
+      filter: isFragranceProduct,
+      emptyHint: "Добавьте ароматы в каталог, и они появятся в этом разделе",
+    });
+  } else if (isDom) {
+    productsSection = renderLandingProductsSection({
+      title: "Все для дома",
+      filter: isHomeProduct,
+      emptyHint: "Добавьте товары для дома в каталог, и они появятся в этом разделе",
+    });
+  }
+
   return `
     <section class="page-hero page-hero--compact">
       <div class="container">
@@ -195,26 +277,12 @@ export function SectionLandingPage(sectionSlug) {
       </div>
     </section>
 
-    <section class="section">
-      <div class="container fragrance-stack">
-        ${section.items
-          .map(
-            (item) => `
-              <a class="fragrance-band" href="/${escapeHtml(sectionSlug)}/${escapeHtml(item.slug)}" data-link style="--fragrance-image: url('${escapeHtml(item.image)}');">
-                <div class="fragrance-band__image"></div>
-                <div class="fragrance-band__overlay"></div>
-                <div class="fragrance-band__content">
-                  <span>${escapeHtml(item.range)}</span>
-                  <h2>${escapeHtml(item.title)}</h2>
-                  <p>${escapeHtml(item.subtitle)}</p>
-                  <small>${escapeHtml(item.description)}</small>
-                </div>
-              </a>
-            `
-          )
-          .join("")}
+    <section class="section${landingSectionClass}">
+      <div class="container ${bandsLayoutClass}">
+        ${bands}
       </div>
     </section>
+    ${productsSection}
   `;
 }
 
@@ -235,11 +303,16 @@ export function SectionCatalogPage(sectionSlug, subsectionSlug) {
     `;
   }
 
-  const products = getProducts().filter(subsection.filter || (() => false));
+  const filtered = getProducts().filter(subsection.filter || (() => false));
+  const slugs = filtered.map((product) => product.slug);
+  const sort = getStoredSort();
+  const products = sortProducts(filtered, sort);
   const heroLine = getSubsectionHeroLine(subsection);
+  const isDom = sectionSlug === "dom";
+  const heroClass = `page-hero page-hero--subsection${isDom ? " page-hero--dom" : ""}`;
 
   return `
-    <section class="page-hero page-hero--subsection" style="--subsection-image: url('${escapeHtml(subsection.image)}');">
+    <section class="${heroClass}" style="--subsection-image: url('${escapeHtml(subsection.image)}');">
       <div class="page-hero__media" aria-hidden="true"></div>
       <div class="page-hero__scrim" aria-hidden="true"></div>
       <div class="container page-hero__body">
@@ -254,10 +327,13 @@ export function SectionCatalogPage(sectionSlug, subsectionSlug) {
     <section class="section">
       <div class="container">
         <div class="catalog-toolbar">
-          <p>${products.length} ${products.length === 1 ? "позиция" : "позиций"}</p>
-          <p>Каталог раздела «${escapeHtml(subsection.title)}»</p>
+          <div class="catalog-toolbar__meta">
+            <p>${products.length} ${products.length === 1 ? "позиция" : "позиций"}</p>
+            <p>Каталог раздела «${escapeHtml(subsection.title)}»</p>
+          </div>
+          ${products.length ? ProductSort({ active: sort }) : ""}
         </div>
-        <div class="product-grid product-grid--catalog">
+        <div class="product-grid product-grid--catalog" ${sortableGridAttrs(slugs)}>
           ${
             products.length
               ? products.map((product) => ProductCard(product)).join("")

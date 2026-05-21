@@ -17,7 +17,7 @@
   }
 
   .product-detail {
-    grid-template-columns: minmax(0, 0.9fr) minmax(360px, 0.8fr);
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 0.75fr);
   }
 
   .product-buy {
@@ -112,13 +112,13 @@
   }
 
   .product-detail {
-    --detail-media-max: min(68vw, 360px);
+    --detail-media-max: min(82vw, 480px);
     grid-template-columns: 1fr;
     width: var(--container);
   }
 
   .product-detail__media .product-media--detail {
-    width: min(100%, 320px);
+    width: min(100%, clamp(280px, 78vw, 440px));
   }
 
   .product-detail__info .product-buy {
@@ -182,6 +182,11 @@
     display: none;
   }
 
+  .site-header__inner {
+    margin-inline: 16px;
+    max-width: calc(100% - 32px);
+  }
+
   .site-header__logo {
     min-width: 100px;
   }
@@ -219,6 +224,7 @@
   .product-grid,
   .product-grid--catalog,
   .product-grid--related,
+  .fragrance-grid--compact,
   .collection-rail,
   .service-strip,
   .value-grid,
@@ -233,6 +239,11 @@
 
   .catalog-toolbar {
     display: grid;
+    gap: 14px;
+  }
+
+  .product-sort {
+    justify-content: flex-start;
   }
 
   .cart-line {

@@ -72,24 +72,46 @@ export function filterProducts(list, filters = {}) {
   });
 }
 
-export function sortProducts(list, sort = "featured") {
+export function isNewProduct(product) {
+  return (product.labels || []).some((label) => normalize(label) === "новинка");
+}
+
+function catalogOrderIndex(product) {
+  return products.findIndex((item) => item.id === product.id);
+}
+
+export function sortProducts(list, sort = "default") {
   const copy = [...list];
+  if (sort === "default") {
+    return copy;
+  }
   if (sort === "price-asc") {
     return copy.sort((a, b) => priceSortValue(a) - priceSortValue(b));
   }
   if (sort === "price-desc") {
     return copy.sort((a, b) => priceSortValue(b) - priceSortValue(a));
   }
+  if (sort === "new") {
+    return copy.sort((a, b) => {
+      const aNew = isNewProduct(a) ? 0 : 1;
+      const bNew = isNewProduct(b) ? 0 : 1;
+      if (aNew !== bNew) return aNew - bNew;
+      return catalogOrderIndex(a) - catalogOrderIndex(b);
+    });
+  }
   if (sort === "intensity") {
     return copy.sort((a, b) => b.intensity - a.intensity);
   }
   if (sort === "name") {
-    return copy.sort((a, b) => a.name.localeCompare(b.name));
+    return copy.sort((a, b) => a.name.localeCompare(b.name, "ru"));
   }
-  return copy.sort((a, b) => {
-    const priority = { in_stock: 0, low_stock: 1, on_request: 2 };
-    return priority[a.status] - priority[b.status];
-  });
+  if (sort === "featured") {
+    return copy.sort((a, b) => {
+      const priority = { in_stock: 0, low_stock: 1, on_request: 2 };
+      return priority[a.status] - priority[b.status];
+    });
+  }
+  return copy;
 }
 
 export function priceSortValue(product) {

@@ -67,7 +67,7 @@ export function ProductPage(slug) {
     <section class="section section--band">
       <div class="container product-specs">
         <div>
-          ${SectionTitle({ label: "Пирамида", title: "Пирамида" })}
+          ${SectionTitle({ title: "Пирамида" })}
           <div class="note-list">
             <div><span>Верхние ноты</span><p>${escapeHtml(product.notes.top.join(" · "))}</p></div>
             <div><span>Ноты сердца</span><p>${escapeHtml(product.notes.heart.join(" · "))}</p></div>

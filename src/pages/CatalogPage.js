@@ -1,4 +1,5 @@
 import { ProductCard } from "../components/ProductCard.js";
+import { getStoredSort, ProductSort, sortableGridAttrs } from "../components/ProductSort.js";
 import { filterProducts, getProducts, sortProducts } from "../lib/catalog.js";
 
 export function CatalogPage() {
@@ -9,7 +10,10 @@ export function CatalogPage() {
     collection: params.get("collection") || "all",
     status: params.get("status") || "all",
   };
-  const products = sortProducts(filterProducts(getProducts(), filters), "featured");
+  const filtered = filterProducts(getProducts(), filters);
+  const slugs = filtered.map((product) => product.slug);
+  const sort = getStoredSort();
+  const products = sortProducts(filtered, sort);
 
   return `
     <section class="page-hero page-hero--compact">
@@ -25,10 +29,13 @@ export function CatalogPage() {
     <section class="section">
       <div class="container">
         <div class="catalog-toolbar">
-          <p>${products.length} ${products.length === 1 ? "позиция" : "позиций"}</p>
-          <p>Цены в рублях. Позиции под заказ подтверждаются менеджером</p>
+          <div class="catalog-toolbar__meta">
+            <p>${products.length} ${products.length === 1 ? "позиция" : "позиций"}</p>
+            <p>Цены в рублях. Позиции под заказ подтверждаются менеджером</p>
+          </div>
+          ${products.length ? ProductSort({ active: sort }) : ""}
         </div>
-        <div class="product-grid product-grid--catalog">
+        <div class="product-grid product-grid--catalog" ${sortableGridAttrs(slugs)}>
           ${
             products.length
               ? products.map((product) => ProductCard(product)).join("")
